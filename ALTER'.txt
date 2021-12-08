@@ -1,0 +1,50 @@
+---------------
+Add a colunm
+---------------
+
+ALTER TABLE tblCustomer
+ADD Address Varchar(255)
+
+
+------------------
+Remove a Colunm
+------------------
+ALTER TABLE tblCustomer
+DROP COLUMN "Address"
+
+
+-------------------
+Set Primary Key
+-----------------
+ALTER TABLE tblCustomer
+ADD PRIMARY KEY (ID)
+
+-------------------
+Set Relationship
+-------------------
+ALTER TABLE tblCustomer
+ADD CONSTRAINT fk_Customer
+FOREIGN KEY (ProductID)
+REFERENCES tblProduct(ID)
+
+-----------------
+Set Table Auto Number
+----------------
+ALTER TABLE tblCustomer
+ALTER COLUMN ID AUTOINCREMENT
+
+------------------
+Set Data type
+------------------
+ALTER TABLE tblCustomer
+ALTER COLUMN ProductID int
+
+
+
+
+
+
+
+
+
+

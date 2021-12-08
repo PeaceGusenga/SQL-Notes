@@ -1,0 +1,2 @@
+DELETE FROM tblCustomer
+WHERE ID=0;

@@ -1,0 +1,19 @@
+-----------------
+AND
+-----------------
+SELECT * FROM tblCustomer
+WHERE FirstName="Jason" AND LastName="Doe"
+
+------------------
+OR
+-----------------
+SELECT * FROM tblCustomer
+WHERE FirstName="Jason" OR LastName="Doe"
+
+----------------
+NOT
+---------------
+SELECT * FROM tblCustomer
+WHERE FirstName="Jason" NOT LastName"Doe"
+
+

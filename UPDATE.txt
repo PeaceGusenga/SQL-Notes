@@ -1,0 +1,3 @@
+UPDATE tblCustormer
+SET PostalCode=2000, LASTnAME="cHABALALA"
+WHERE ID=40;

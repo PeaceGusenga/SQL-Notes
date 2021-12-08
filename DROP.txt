@@ -1,0 +1,13 @@
+-------------
+Drop Foreign Key
+------------
+
+ALTER TABLE tblGrades
+DROP CONSTRAINT fk_GradesAttendance
+
+---------------
+Drop Column
+---------------
+
+ALTER TABLE tblGrades
+DROP COLUMN AttendanceID

@@ -1,0 +1,85 @@
+----------------------------
+SELECT ALL DATA FROM TABLE
+---------------------------
+SELECT *FROM tblCustomer
+
+
+----------------------------
+SELECT SINGLE COLOUMN FROM TABLE
+-----------------------------
+SELECT FirstName FROM tblCustomers
+
+
+----------------------------
+SELECT TWO COLOUMNS FROM TABLE
+-----------------------------
+SELECT FirstName, LastName FROM tblCustomers
+
+-------------------------
+SELECT USING OPERATORS
+-------------------------
+SELECT * FROM tblCustomer
+WHERE FirstName="Jason"
+
+
+SELECT * FROM tblProducts
+WHERE Price<60
+
+
+SELECT * FROM tblProducts
+WHERE Price>60
+
+
+SELECT * FROM tblProducts
+WHERE Price<=60
+
+
+SELECT * FROM tblProducts
+WHERE Price>=60
+
+---------------
+NOT EQAUL TO <>
+---------------
+SELECT * FROM tblProducts
+WHERE Price<>60
+
+
+--------------------------
+SELECT USING ARITHMETIC
+------------------------
+SELECT <Expression> [arithmenticf operator] <expression>...
+FROM [Table_Name]
+WHERE [expression];
+
+Examples
+
+SELECT cust_name, opening_amt, receive_amt, (opening_amt + receive_amt)
+FROM customer
+WHERE (opening_amt + receive_amt)>10000;
+
+
+SELECT cust_name, opening_amt, patment_amt, outstanding_amt
+FROM customer
+WHERE (outstanding_amt=payment_amt)=receive_amt;
+
+
+SELECT agent_code, agent_name, working_area, (commission*6)
+FROM agents
+WHERE (commission*6)>0.67;
+
+
+SELECT cust_name, opening_amt, receive_amt, outstanding_amt, (receove_amt*5/ 80) commission
+FROM customer
+WHERE
+outstanding_amt<=5000;
+
+
+SELECT 159%4;
+
+
+
+
+
+
+
+

@@ -1,0 +1,2 @@
+INSERT INTO tblSubject (ID, SubjectName)
+VALUES (1, "Life Orientation");

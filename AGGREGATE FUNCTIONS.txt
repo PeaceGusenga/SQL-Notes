@@ -1,0 +1,29 @@
+----------------------
+MIN
+-----------------------
+SELECT MIN(Price) FROM tblProduct
+
+
+---------------------
+MAX
+-----------------------
+SELECT MAX(Price) FROM tblProduct
+
+
+----------------------
+SUM
+----------------------
+SELECT SUM(Price) FROM tblProduct
+
+
+-----------------------
+AVG
+-----------------------
+SELECT AVG(Price) FROM tblProduct
+
+
+------------------
+COUNT
+------------------
+SELECT COUNT(Price) FROM tblProduct
+

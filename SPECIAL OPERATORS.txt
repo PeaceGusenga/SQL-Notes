@@ -1,0 +1,37 @@
+--------------------
+BETWEEN
+-------------------
+SELECT * FROM tblProducts
+WHERE Price BETWEEN 10 AND 50
+
+--------------------
+LIKE
+--------------------
+SELECT * FROM tblCustomer
+WHERE FirstName LIKE "g*"
+
+//returns all values starting with g
+
+------------------------
+DISTINCT
+----------------------
+SELECT DISTINCT FirstName FROM tblCustomer
+
+//Only FirstName column will be showm
+//Results will not show duplicate entires for same name
+//eg one of each will be displayed
+
+------------------------
+IN
+-------------------------
+SELECT * FROM tblCustomer
+WHERE Suburb IN ("Randburg", "North Cliff")
+
+//Only the two values in the suburb column are retrieved
+
+-------------------
+EXISTS
+------------------
+SELECT * FROM tblCustomer
+WHERE EXISTS (SELECT * FROM tblTransaction WHERE tblCustomer.ID = tblTransaction.SubjectID);
+

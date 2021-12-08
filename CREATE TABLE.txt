@@ -1,0 +1,6 @@
+CREATE TABLE XXXXX
+(
+Column1 DATATTYPE
+ColumN2 DATATTYPE
+...
+);

@@ -1,0 +1,2 @@
+CREATE INDEX indexName
+ON tbleExample (coulmn)
